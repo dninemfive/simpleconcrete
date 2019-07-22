@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+		<li Class="PatchOperationTest">
+		  <xpath>*/ThingDef[defName = "CrushedRocks" or defName = "SandPile"]</xpath>
+		</li>
+		<li Class="PatchOperationReplace">
+		  <xpath>*/RecipeDef[defName = "MakeD9Concrete"]/ingredients</xpath>
+		  <value>
+			<ingredients>
+			  <li>
+				<filter>
+				  <thingDefs>
+					<li>D9Cement</li>
+				  </thingDefs>
+				</filter>
+				<count>2</count>
+			  </li>
+			  <li>
+				<filter>
+					<thingDefs>
+						<li>CrushedRocks</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			  </li>
+			  <li>
+				<filter>
+					<thingDefs>
+						<li>SandPile</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			  </li>
+			</ingredients>
+		  </value>
+		</li>	
+		<li Class="PatchOperationReplace">
+		  <xpath>*/RecipeDef[defName = "MakeD9Concrete"]/fixedIngredientFilter</xpath>
+		  <value>
+			<fixedIngredientFilter>
+			  <thingDefs>
+				<li>D9Cement</li>
+				<li>CrushedRocks</li>
+				<li>SandPile</li>
+			  </thingDefs>
+			</fixedIngredientFilter>
+		  </value>
+		</li>				
+	  </operations>
+	</Operation>
+</Patch>

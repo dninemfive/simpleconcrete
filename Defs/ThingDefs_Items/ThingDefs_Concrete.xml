@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>D9Cement</defName>
+    <label>cement</label>
+    <description>A powder produced by heating limestone at high temperatures used to produce concrete.</description>
+    <graphicData>
+      <texPath>Resource/cement</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <stackLimit>75</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.5</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <tradeability>Sellable</tradeability>
+    <techLevel>Industrial</techLevel>
+  </ThingDef>
+	<!-- modified from steel def -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>D9Concrete</defName>
+    <label>concrete</label>
+    <description>A mixture of cement and aggregate which can be easily poured into a hard, resilient stony material.</description>
+    <graphicData>
+      <texPath>Resource/concrete</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <statBases>
+      <MarketValue>2.1</MarketValue>
+      <Mass>1.5</Mass>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.16</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(107,109,107)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statFactors>
+        <Beauty>0.8</Beauty>
+        <Flammability>0</Flammability>
+        <MeleeWeapon_CooldownMultiplier>1.4</MeleeWeapon_CooldownMultiplier>
+        <MaxHitPoints>1.6</MaxHitPoints>
+		<WorkToBuild>0.5</WorkToBuild>
+      </statFactors>
+      <smeltable>false</smeltable>
+    </stuffProps>
+  </ThingDef>
+</Defs>
