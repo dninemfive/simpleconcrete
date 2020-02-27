@@ -3,119 +3,66 @@
 	<!-- vanilla clinker recipes -->
   <RecipeDef>
     <defName>MakeD9Cement</defName>
-    <label>smelt limestone into cement</label>
-    <description>Use high heat to calcine limestone into cement to produce concrete.</description>
-    <jobString>Smelting limestone into cement.</jobString>
-    <workAmount>1500</workAmount>
+    <label>smelt stone into cement</label>
+    <description>Use high heat to calcine limestone or other stone into cement to produce concrete. 33% less limestone is required than other stone types.</description>
+    <jobString>Smelting stone into cement.</jobString>
+    <workAmount>4000</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
+	<ingredientValueGetterClass>D9Concrete.IngredientValueGetter_Concrete</ingredientValueGetterClass>
     <ingredients>
       <li>
         <filter>
-          <thingDefs>
-            <li>ChunkLimestone</li>
-          </thingDefs>
+		  <categories>
+            <li>StoneBlocks</li>
+            <li>StoneChunks</li>
+          </categories>
         </filter>
-        <count>1</count>
+        <count>30</count>
       </li>
     </ingredients>
     <products>
       <D9Cement>2</D9Cement>
     </products>
     <fixedIngredientFilter>
-      <thingDefs>
-        <li>ChunkLimestone</li>
-      </thingDefs>
+      <categories>
+		<li>StoneBlocks</li>
+		<li>StoneChunks</li>
+	  </categories>
     </fixedIngredientFilter>
   </RecipeDef>
   <RecipeDef>
     <defName>MakeD9CementBulk</defName>
-    <label>smelt limestone into cement in bulk</label>
-    <description>Use high heat to calcine limestone into cement to produce concrete.</description>
-    <jobString>Smelting limestone into cement in bulk.</jobString>
+    <label>smelt stone into cement in bulk</label>
+    <description>Use high heat to calcine limestone or other stone into cement to produce concrete. 33% less limestone is required than other stone types.</description>
+    <jobString>Smelting stone into cement in bulk.</jobString>
     <workAmount>4000</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
+	<ingredientValueGetterClass>D9Concrete.IngredientValueGetter_Concrete</ingredientValueGetterClass>
     <ingredients>
       <li>
         <filter>
-			<categories>
+		  <categories>
             <li>StoneBlocks</li>
+            <li>StoneChunks</li>
           </categories>
-          <thingDefs>
-            <li>ChunkLimestone</li>
-          </thingDefs>
         </filter>
-        <count>3</count>
+        <count>90</count>
       </li>
     </ingredients>
     <products>
       <D9Cement>6</D9Cement>
     </products>
     <fixedIngredientFilter>
-      <thingDefs>
-        <li>ChunkLimestone</li>
-      </thingDefs>
+      <categories>
+		<li>StoneBlocks</li>
+		<li>StoneChunks</li>
+	  </categories>
     </fixedIngredientFilter>
   </RecipeDef>
-  <!--RecipeDef>
-    <defName>MakeD9CementGeneral</defName>
-    <label>smelt stone blocks into cement</label>
-    <description>Use high heat to calcine stone blocks into cement in order to produce concrete.</description>
-    <jobString>Smelting stone into cement.</jobString>
-    <workAmount>1800</workAmount>
-    <workSpeedStat>SmeltingSpeed</workSpeedStat>
-    <effectWorking>Smelt</effectWorking>
-    <soundWorking>Recipe_Smelt</soundWorking>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>StoneBlocks</li>
-          </categories>
-        </filter>
-        <count>25</count>
-      </li>
-    </ingredients>
-    <products>
-      <D9Cement>3</D9Cement>
-    </products>
-    <fixedIngredientFilter>
-      <categories>
-        <li>StoneBlocks</li>
-      </categories>
-    </fixedIngredientFilter>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>MakeD9CementGeneralBulk</defName>
-    <label>smelt stone blocks into cement in bulk</label>
-    <description>Use high heat to calcine stone blocks into cement in order to produce concrete.</description>
-    <jobString>Smelting stone into cement in bulk.</jobString>
-    <workAmount>4800</workAmount>
-    <workSpeedStat>SmeltingSpeed</workSpeedStat>
-    <effectWorking>Smelt</effectWorking>
-    <soundWorking>Recipe_Smelt</soundWorking>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>StoneBlocks</li>
-          </categories>
-        </filter>
-        <count>150</count>
-      </li>
-    </ingredients>
-    <products>
-      <D9Cement>18</D9Cement>
-    </products>
-    <fixedIngredientFilter>
-      <categories>
-        <li>StoneBlocks</li>
-      </categories>
-    </fixedIngredientFilter>
-  </RecipeDef-->
   <!-- vanilla concrete recipe (large enough to be bulk) -->
   <!-- 2 cement, 2 stone chunks (any) -> 60 concrete -->
   <RecipeDef>

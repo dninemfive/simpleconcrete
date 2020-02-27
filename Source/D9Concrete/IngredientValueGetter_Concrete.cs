@@ -7,12 +7,17 @@ using RimWorld;
 
 namespace D9Concrete
 {
+    // hardcoded. Generally bad practice, but this is a small mod so I don't need to overgeneralize. 
     public class IngredientValueGetter_Concrete : IngredientValueGetter
     {
+        private const float LimestoneMultiplier = 1.5f;
+
         public override float ValuePerUnitOf(ThingDef t)
         {
             if (!t.IsStuff || !IsStoneyStuff(t)) return 0f;
-            if (t.HasModExtension<RecipeMultiplier>()) return t.GetModExtension<RecipeMultiplier>().multiplier;
+            if (t.defName == "ChunkLimestone") return LimestoneMultiplier * 20f;
+            if (t.defName == "BlocksLimestone") return LimestoneMultiplier;
+            if (t.HasModExtension<IsStoneChunk>()) return 20f;
             return 1f;
         }
         public override string BillRequirementsDescription(RecipeDef r, IngredientCount ing)
@@ -25,8 +30,7 @@ namespace D9Concrete
             return false;
         }
     }
-    public class RecipeMultiplier : DefModExtension
+    public class IsStoneChunk : DefModExtension
     {
-        public float multiplier; 
     }
 }
