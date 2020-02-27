@@ -3,6 +3,6 @@
 	<!-- easily identify stone chunks, even from mods -->
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[@Name="ChunkRockBase"]</xpath>
-		<value><li Class="D9Concrete.IsStoneChunk"/><value>
+		<value><li Class="D9Concrete.IsStoneChunk"/></value>
 	</Operation>
 </Patch>

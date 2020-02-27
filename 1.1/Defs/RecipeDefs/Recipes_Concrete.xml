@@ -6,7 +6,7 @@
     <label>smelt stone into cement</label>
     <description>Use high heat to calcine limestone or other stone into cement to produce concrete. 33% less limestone is required than other stone types.</description>
     <jobString>Smelting stone into cement.</jobString>
-    <workAmount>4000</workAmount>
+    <workAmount>1500</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
