@@ -11,6 +11,9 @@
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
 	<ingredientValueGetterClass>D9Concrete.IngredientValueGetter_Concrete</ingredientValueGetterClass>
+	<recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -42,6 +45,9 @@
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
 	<ingredientValueGetterClass>D9Concrete.IngredientValueGetter_Concrete</ingredientValueGetterClass>
+	<recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -73,6 +79,9 @@
     <workAmount>2100</workAmount>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
+	<recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
     <ingredients>
       <li>
         <filter>
