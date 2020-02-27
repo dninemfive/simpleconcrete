@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationAdd">
-	  <xpath>*/ThingDef[defName = "ElectricSmelter"]/recipes</xpath>
-	  <value>
-		<li>MakeD9Cement</li>
-		<li>MakeD9CementBulk</li>
-		<li>MakeD9CementGeneral</li>
-		<li>MakeD9CementGeneralBulk</li>
-	  </value>
-	</Operation> 
-	<Operation Class="PatchOperationAdd">
-	  <xpath>*/ThingDef[defName = "BiofuelRefinery"]/recipes</xpath>
-	  <value>
-		<li>MakeD9Concrete</li>
-	  </value>
-	</Operation> 
 	<!-- renames the Biofuel Refinery back to the refinery and changes the description so making concrete there makes sense -->
 	<Operation Class="PatchOperationReplace">
 	  <xpath>*/ThingDef[defName = "BiofuelRefinery"]/label</xpath>
