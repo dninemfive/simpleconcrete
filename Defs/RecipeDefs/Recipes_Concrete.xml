@@ -10,6 +10,9 @@
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
+	<recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -38,6 +41,9 @@
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
+	<recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -66,6 +72,9 @@
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
+	<recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -94,6 +103,9 @@
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
+	<recipeUsers>
+		<li>ElectricSmelter</li>
+	</recipeUsers>
     <ingredients>
       <li>
         <filter>
@@ -123,6 +135,9 @@
     <workAmount>2100</workAmount>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
+	<recipeUsers>
+		<li>BiofuelRefinery</li>
+	</recipeUsers>
     <ingredients>
       <li>
         <filter>

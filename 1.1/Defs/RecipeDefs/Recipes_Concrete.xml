@@ -80,7 +80,7 @@
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
 	<recipeUsers>
-		<li>ElectricSmelter</li>
+		<li>BiofuelRefinery</li>
 	</recipeUsers>
     <ingredients>
       <li>
