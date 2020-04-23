@@ -4,7 +4,7 @@
   <RecipeDef>
     <defName>MakeD9Cement</defName>
     <label>smelt stone into cement</label>
-    <description>Use high heat to calcine limestone or other stone into cement to produce concrete. 33% less limestone is required than other stone types.</description>
+    <description>Use high heat to calcine limestone or other stone into cement to produce concrete.</description>
     <jobString>Smelting stone into cement.</jobString>
     <workAmount>1500</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
@@ -38,7 +38,7 @@
   <RecipeDef>
     <defName>MakeD9CementBulk</defName>
     <label>smelt stone into cement in bulk</label>
-    <description>Use high heat to calcine limestone or other stone into cement to produce concrete. 33% less limestone is required than other stone types.</description>
+    <description>Use high heat to calcine limestone or other stone into cement to produce concrete.</description>
     <jobString>Smelting stone into cement in bulk.</jobString>
     <workAmount>4000</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
