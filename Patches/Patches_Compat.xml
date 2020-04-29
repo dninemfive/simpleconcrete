@@ -4,10 +4,10 @@
 	  <success>Always</success>
 	  <operations>
 		<li Class="PatchOperationTest">
-		  <xpath>*/ThingDef[defName = "CrushedRocks" or defName = "SandPile"]</xpath>
+		  <xpath>/Defs/ThingDef[defName = "CrushedRocks" or defName = "SandPile"]</xpath>
 		</li>
 		<li Class="PatchOperationReplace">
-		  <xpath>*/RecipeDef[defName = "MakeD9Concrete"]/ingredients</xpath>
+		  <xpath>/Defs/RecipeDef[defName = "MakeD9Concrete"]/ingredients</xpath>
 		  <value>
 			<ingredients>
 			  <li>
@@ -38,7 +38,7 @@
 		  </value>
 		</li>	
 		<li Class="PatchOperationReplace">
-		  <xpath>*/RecipeDef[defName = "MakeD9Concrete"]/fixedIngredientFilter</xpath>
+		  <xpath>/Defs/RecipeDef[defName = "MakeD9Concrete"]/fixedIngredientFilter</xpath>
 		  <value>
 			<fixedIngredientFilter>
 			  <thingDefs>
