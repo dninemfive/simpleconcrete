@@ -2,13 +2,13 @@
 <Patch>
 	<!-- renames the Biofuel Refinery back to the refinery and changes the description so making concrete there makes sense -->
 	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[defName = "BiofuelRefinery"]/label</xpath>
+	  <xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/label</xpath>
 	  <value>
 		<label>refinery</label>
 	  </value>
 	</Operation> 
 	<Operation Class="PatchOperationReplace">
-	  <xpath>*/ThingDef[defName = "BiofuelRefinery"]/description</xpath>
+	  <xpath>/Defs/ThingDef[defName = "BiofuelRefinery"]/description</xpath>
 	  <value>
 		<description>Refines raw ingredients into more complex materials.</description>
 	  </value>

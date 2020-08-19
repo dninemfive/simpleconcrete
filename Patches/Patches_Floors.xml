@@ -2,35 +2,35 @@
 <Patch>
 	<!-- makes concrete require actual concrete instead of steel -->
 	<Operation Class="PatchOperationReplace">
-	  <xpath>*/TerrainDef[defName = "Concrete"]/costList/Steel</xpath>
+	  <xpath>/Defs/TerrainDef[defName = "Concrete"]/costList/Steel</xpath>
 	  <value>
 		<D9Concrete>1</D9Concrete>
 	  </value>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-	  <xpath>*/TerrainDef[defName = "PavedTile"]/costList/Steel</xpath>
+	  <xpath>/Defs/TerrainDef[defName = "PavedTile"]/costList/Steel</xpath>
 	  <value>
 		<D9Concrete>2</D9Concrete>
 	  </value>
 	</Operation>
 	<!-- makes concrete flooring have neutral beauty and tiles be slightly beautiful in order to balance their increased cost -->
 	<Operation Class="PatchOperationReplace">
-	  <xpath>*/TerrainDef[defName = "Concrete"]/description</xpath>
+	  <xpath>/Defs/TerrainDef[defName = "Concrete"]/description</xpath>
 	  <value>
 		<description>Rough concrete. It is fast to walk on, cheap, and quick to build, but neutral in terms of looks.</description>
 	  </value>
 	</Operation>
 	<Operation Class="PatchOperationRemove">
-	  <xpath>*/TerrainDef[defName = "Concrete"]/statBases/Beauty</xpath>
+	  <xpath>/Defs/TerrainDef[defName = "Concrete"]/statBases/Beauty</xpath>
 	</Operation>
 	<Operation Class="PatchOperationReplace">
-	  <xpath>*/TerrainDef[defName = "PavedTile"]/description</xpath>
+	  <xpath>/Defs/TerrainDef[defName = "PavedTile"]/description</xpath>
 	  <value>
 		<description>Concrete tiles. Cheap and quick to move around on and somewhat pleasant to the eye, but slow to build.</description>
 	  </value>
 	</Operation>
 	<Operation Class="PatchOperationAdd">
-	  <xpath>*/TerrainDef[defName = "PavedTile"]/statBases</xpath>
+	  <xpath>/Defs/TerrainDef[defName = "PavedTile"]/statBases</xpath>
 	  <value>
 		<Beauty>1</Beauty>
 	  </value>
