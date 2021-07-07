@@ -3,6 +3,12 @@
 	<name>Simple Concrete</name>
 	<author>dninemfive</author>
 	<packageId>dninemfive.simpleconcrete</packageId>
-	<supportedVersions><li>0.19</li><li>1.0</li><li>1.1</li><li>1.2</li></supportedVersions>
+	<supportedVersions>
+		<li>0.19</li>
+		<li>1.0</li>
+		<li>1.1</li>
+		<li>1.2</li>
+		<li>1.3</li>
+	</supportedVersions>
 	<description>Adds concrete to the game as a building stuff, so now your concrete floors can actually be made of concrete.</description>
 </ModMetaData>
